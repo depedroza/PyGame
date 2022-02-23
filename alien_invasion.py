@@ -41,6 +41,7 @@ class AlienInvasion:
             self._check_events()
             self.ship.update()
             self._update_bullets()
+            self._update_aliens()
             self._update_screen()
 
     def _check_events(self):
@@ -87,6 +88,10 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
             # Use below to test bullets decrease to zero after firing
         # print(len(self.bullets))
+
+    def _update_aliens(self):
+        """Update the positions of all aliens in the fleet."""
+        self.aliens.update()
 
     def _create_fleet(self):
         """Create the fleet of aliens."""
