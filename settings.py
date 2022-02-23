@@ -14,7 +14,7 @@ class Settings:
         # Bullet settings
         #   change width, speed, etc to test out features more easily
         #   or to create new powers for the ship
-        self.bullet_speed = 1.2
+        self.bullet_speed = 1.4
         self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = (220, 20, 60)

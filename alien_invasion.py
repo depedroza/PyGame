@@ -88,9 +88,12 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
             # Use below to test bullets decrease to zero after firing
         # print(len(self.bullets))
-        # Check for any bullets that have hit aliens.
-        # if so, get rid of the bullet and the alien.
+        self._check_bullet_alien_collisions()
+
+    def _check_bullet_alien_collisions(self):
+        """Respond to bullet-alien collisions."""
         collisions = pygame.sprite.groupcollide(self.bullets, self.aliens, True, True)
+
         if not self.aliens:
             # Destroy existing bullets and create new fleet.
             self.bullets.empty()
