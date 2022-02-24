@@ -14,7 +14,7 @@ class Settings:
         # Bullet settings
         #   change width, speed, etc to test out features more easily
         #   or to create new powers for the ship
-        self.bullet_width = 15
+        self.bullet_width = 200
         self.bullet_height = 15
         self.bullet_color = (220, 20, 60)
         self.bullets_allowed = 3
@@ -49,4 +49,4 @@ class Settings:
 
         self.alien_points = int(self.alien_points * self.score_scale)
         # Below to check if points are increasing
-        print(self.alien_points)
+        # print(self.alien_points)
